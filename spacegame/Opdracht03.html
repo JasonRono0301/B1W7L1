@@ -16,9 +16,15 @@
         spaceShip.loadLevel(3);
         //Eigen acties
         spaceShip.run(function () {
-        for(i=0; i<7; i++){
+        for(i=0; i<7; i++){//For loop voor de bovenkant.
             spaceShip.moveForward();
         };
+            spaceShip.rotateRight();
+            spaceShip.moveForward();
+            spaceShip.rotateRight();
+        for(i=0; i<7; i++){//For loop voor de onderkant.
+            spaceShip.moveForward();
+        }
         });
     </script>
 </body>
