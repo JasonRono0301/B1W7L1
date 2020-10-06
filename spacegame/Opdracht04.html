@@ -17,19 +17,24 @@
         //Eigen acties
         spaceShip.run(function () {
             // code  start
-            for(a=0; a<2; a++){
-            for(i=0; i<2; i++){
-                spaceShip.rotateLeft();
-                spaceShip.moveForward();
+            for(a=0; a<3; a++){
+                    for(i=0; i<1; i++){
+                        spaceShip.rotateLeft();
+                        spaceShip.moveForward();
+                        spaceShip.rotateLeft();
+                    }
+                    for(i=0; i<7; i++){
+                        spaceShip.moveForward();
+                    }
+                    for(i=0; i<1; i++){
+                        spaceShip.rotateRight();
+                        spaceShip.moveForward();
+                        spaceShip.rotateRight();
+                    }
+                    for(i=0; i<7; i++){
+                        spaceShip.moveForward();
+                    }
             }
-            for(i=0; i<7; i++){
-                spaceShip.moveForward();
-            }
-            for(i=0; i<2; i++){
-                spaceShip.rotateRight();
-                spaceShip.moveForward();
-            }
-        }
             // code  einde
         });
     </script>
